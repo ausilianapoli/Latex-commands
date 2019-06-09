@@ -107,3 +107,22 @@ https://www.verbosus.com/bibtex-style-examples.html
 %---------------------------------------
 
 \textsuperscript{\textregistered}
+
+%---------------------------------------
+% use listings with wordwrap for columns layout
+%---------------------------------------
+
+\usepackage{listing}
+\lstset{
+	basicstyle=\ttfamily,
+	columns=fullflexible,
+	frame=single,
+	breaklines=true,
+	postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
+}
+
+%---------------------------------------
+% add section not numbered to list of contents
+%---------------------------------------
+
+\addcontentsline{toc}{section}{Conclusioni}
